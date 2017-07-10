@@ -1,3 +1,9 @@
+//  *
+//  * *
+//  * * *
+//  * * * *
+//  * * * * *
+
 class triangle1 {
     public static void main(String[] args) {
         for (int i = 1; i <= 5; i++) {
@@ -9,6 +15,12 @@ class triangle1 {
     }
 }
 
+//  * * * * *
+//  * * * *
+//  * * *
+//  * *
+//  *
+
 class triangle2 {
     public static void main(String[] args) {
         for (int i = 5; i >= 1; i--) {
@@ -19,6 +31,12 @@ class triangle2 {
         }
     }
 }
+
+//      *
+//     * *
+//    * * *
+//   * * * *
+//  * * * * *
 
 class triangle3 {
     public static void main(String[] args) {
@@ -34,6 +52,12 @@ class triangle3 {
     }
 }
 
+//  * * * * *
+//   * * * *
+//    * * *
+//     * *
+//      *
+
 class triangle4 {
     public static void main(String[] args) {
         for (int i = 4; i >= 0; i--) {
@@ -47,6 +71,17 @@ class triangle4 {
         }
     }
 }
+
+//      *
+//     * *
+//    * * *
+//   * * * *
+//  * * * * *
+//  * * * * *
+//   * * * *
+//    * * *
+//     * *
+//      *
 
 class triangle5 {
     public static void main(String[] args) {
