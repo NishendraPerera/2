@@ -1,5 +1,6 @@
 class Powers {
     public static void main(String[] args) {
+        // Using normal variables
         // int i = Integer.parseInt(args[0]);
         // int j = Integer.parseInt(args[1]);
         // int value = 1;
@@ -7,6 +8,8 @@ class Powers {
         // value *= i;
         // }
         // System.out.println(value);
+        
+        // Using an array
         int a = Integer.parseInt(args[0]);
         int b = Integer.parseInt(args[1]);
         int[][] Powers = new int[40][40];
