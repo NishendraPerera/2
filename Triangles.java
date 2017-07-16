@@ -4,7 +4,7 @@
 //  * * * *
 //  * * * * *
 
-class triangle1 {
+class Triangle1 {
     public static void main(String[] args) {
         for (int i = 1; i <= 5; i++) {
             for (int j = 1; j <= i; j++) {
@@ -21,7 +21,7 @@ class triangle1 {
 //  * *
 //  *
 
-class triangle2 {
+class Triangle2 {
     public static void main(String[] args) {
         for (int i = 5; i >= 1; i--) {
             for (int j = 1; j <= i; j++) {
@@ -38,7 +38,7 @@ class triangle2 {
 //   * * * *
 //  * * * * *
 
-class triangle3 {
+class Triangle3 {
     public static void main(String[] args) {
         for (int i = 1; i <= 5; i++) {
             for (int j = 1; j <= 5 - i; j++) {
@@ -58,7 +58,7 @@ class triangle3 {
 //     * *
 //      *
 
-class triangle4 {
+class Triangle4 {
     public static void main(String[] args) {
         for (int i = 4; i >= 0; i--) {
             for (int k = 1; k <= 5 - i; k++) {
@@ -83,7 +83,7 @@ class triangle4 {
 //     * *
 //      *
 
-class triangle5 {
+class Triangle5 {
     public static void main(String[] args) {
         for (int i = 1; i <= 5; i++) {
             for (int j = 1; j <= 5 - i; j++) {
