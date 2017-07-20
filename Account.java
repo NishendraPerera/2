@@ -1,6 +1,5 @@
-package Account;
 public class Account {
-//     Account attributes *****************************************************
+    //     Account attributes *****************************************************
     private int Id;
     private int Type;
     private int HolderId;
@@ -8,7 +7,7 @@ public class Account {
     private double IntRate;
     private boolean IsActive = true;
 
-//     Getters and Setters ****************************************************
+    //     Getters and Setters ****************************************************
     public int getId() {
         return this.Id;
     }
@@ -57,40 +56,40 @@ public class Account {
         this.IsActive = newValue;
     }
 
-//     Other methods *********************************************************
+    //     Other methods *********************************************************
 
     public void avaBalance() {
         double CurBalance = this.getBalance();
         System.out.println("Available Balance: " + CurBalance);
     }
-    
-    public void deposit(double Amount) {
+
+    public void deposit(double amount) {
         double CurBalance = this.getBalance();
-        
-        if(Amount > 0){
-            double NewBalance = CurBalance + Amount;
+
+        if (amount > 0) {
+            double NewBalance = CurBalance + amount;
             this.setBalance(NewBalance);
-            System.out.println(Amount + " was credited to the account.");
+            System.out.println(amount + " was credited to the account.");
             avaBalance();
         } else {
             System.out.println("There has been an eror!");
         }
     }
-    
-    public void withdraw(double Amount) {
+
+    public void withdraw(double amount) {
         double CurBalance = this.getBalance();
-        
-        if(Amount > 0 && Amount < CurBalance){
-            double NewBalance = CurBalance - Amount;
+
+        if (amount > 0 && amount < CurBalance) {
+            double NewBalance = CurBalance - amount;
             this.setBalance(NewBalance);
-            System.out.println(Amount + " was debited to the account.");
+            System.out.println(amount + " was debited to the account.");
             avaBalance();
         } else {
             System.out.println("There has been an eror!");
         }
     }
-    
-    public void calcInterest(){
+
+    public void calcInterest() {
         double IntRate = this.getIntRate();
         double CurBalance = this.getBalance();
         double IntAmount = CurBalance * IntRate;
@@ -100,19 +99,19 @@ public class Account {
         avaBalance();
     }
 
-//     Main method ***********************************************************
-//    ________________________________________________________________________
+    //     Main method ***********************************************************
+    //    ________________________________________________________________________
     public static void main(String[] args) {
-        
-//        Create new Account object ******************************************
+
+        //        Create new Account object ******************************************
         Account newAccount = new Account();
 
-//        Use the methods of the Account *************************************
-            newAccount.deposit(12_000.00);
-            newAccount.withdraw(4_000.00);
-            
-//            If the Interest Rate was 5.4% per 12 months ********************
-            newAccount.setIntRate(0.054/12);
-            newAccount.calcInterest();
+        //        Use the methods of the Account *************************************
+        newAccount.deposit(12_000.00);
+        newAccount.withdraw(4_000.00);
+
+        //            If the Interest Rate was 5.4% per 12 months ********************
+        newAccount.setIntRate(0.054 / 12);
+        newAccount.calcInterest();
     }
 }
